@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+
+.pagina1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    height: 500px;
+    padding: 20px;
+    border: 2px solid #555;
+    background-image: linear-gradient(to left, #2021220a, #43464254) ;
+}
+
+.box{
+    display: flex;
+    flex-direction: column; 
+    height: 250px;
+    border-radius: 10px;
+}
+
+.box input{
+    font-size: 23px;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #0a3de4;
+    margin-bottom: 5px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.box label{
+    font-size: 20px;
+    color: #05217c;
+    font-weight: 700;
+}
+
+legend{
+    font-size: 23px;
+    text-align: center;
+    color: #05217c;
+    font-weight: 800;
+}
+
+.part2{
+    align-items: center;
+    height: 80px;
+    padding: 0px 10px;
+    display: flex;
+    gap: 15px;
+    font-size: 19px;
+}
+
+.btn{
+    width: 90px;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #2153f7;
+    color: aliceblue;
+}

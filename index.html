@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <div class="pagina1">
+            <fieldset class="box">
+                <legend>dados pessoais</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome">
+                <label for="idade">Idade:</label>
+                <input type="text" name="idade" id="idade">
+            </fieldset>
+            <fieldset class="part2" disabled>
+                <legend>Sexo:</legend>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="genero" id="masculino">
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="genero" id="feminino">
+                <label for="outros">Outros</label>
+                <input type="radio" name="genero" id="outros">
+            </fieldset>
+           
+
+            <input type="button" value="Enviar" class="btn">
+        </div>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
