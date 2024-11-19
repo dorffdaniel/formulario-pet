@@ -1,72 +1,168 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+main{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    background: #e0aa62;
+    transition: all ease-in-out 0.5s;
 }
 
-form{
+.container{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.box-imagem img{
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px #1b1b1b;
+}
+
+
+.formulario{
     display: flex;
     justify-content: center;
-    height: 100vh;
+    flex-direction: column;
+    width: 650px;
+    height: 800px;
+    gap: 10px;
+    background: #fff;
+    padding: 5px 0 5px 15px;
+    border-radius: 15px;
+    transition: all ease-in-out 0.5s;
+}
+
+.formulario h1{
+    font-size: 32px;
+}
+
+.botao{
+    align-self: flex-end;
+    padding-right: 10px;
+}
+
+.botao button{
+    border: none;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.selecionar-animais{
+    display: flex;
     align-items: center;
+    font-size: 25px;
+    gap: 10px;
+}
+
+.selecionar-animais input{
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.info h2{
+    margin: 10px 0;
+}
+
+.info label{
+    font-size: 25px;
+    padding: 8px;
 }
 
 
-.pagina1{
+.info input{
+    width: 18px;
+    height: 18px;
+    cursor: pointer; 
+}
+
+
+.info-animal{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 600px;
-    height: 500px;
-    padding: 20px;
-    border: 2px solid #555;
-    background-image: linear-gradient(to left, #2021220a, #43464254) ;
 }
 
-.box{
-    display: flex;
-    flex-direction: column; 
-    height: 250px;
-    border-radius: 10px;
+.info-animal label{
+    font-size: 25px;
+    margin-top: 10px;
 }
 
-.box input{
-    font-size: 23px;
-    border: none;
-    background: none;
-    border-bottom: 2px solid #0a3de4;
-    margin-bottom: 5px;
-    outline: none;
+.info-animal input{
+    width: 200px;
+    height: 25px;
     padding-left: 10px;
 }
 
-.box label{
-    font-size: 20px;
-    color: #05217c;
-    font-weight: 700;
-}
-
-legend{
-    font-size: 23px;
-    text-align: center;
-    color: #05217c;
-    font-weight: 800;
-}
-
-.part2{
-    align-items: center;
-    height: 80px;
-    padding: 0px 10px;
+.info-pessoa{
     display: flex;
-    gap: 15px;
-    font-size: 19px;
+    flex-direction: column;
+}
+
+
+.info-pessoa label{
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.info-pessoa input{
+    width: 400px;
+    height: 25px;
+    padding-left: 10px;
+}
+
+.termosEcondicao{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.termosEcondicao input{
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
 }
 
 .btn{
-    width: 90px;
-    margin-top: 20px;
-    font-size: 20px;
-    padding: 5px;
-    border-radius: 10px;
-    background-color: #2153f7;
-    color: aliceblue;
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    background-color: #e28205;
+    border: 3px solid #613905;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+
+.btn:hover{
+    background-color: #613905;
+    color: #fff;
+}
+
+.dark{
+    background: #242323;
+    transition: all ease-in-out 0.5s;
+}
+
+.darkStrong{
+    background: #000;
+    transition: all ease-in-out 0.5s;
+}
+
+.corBranca{
+    color: #fff;
+}
+
+.backgroundBotao{
+    color: #f5f4f4;
+    background: #111111;
 }
