@@ -24,3 +24,5 @@ HTML: Para estruturação da página. <br>
 CSS: Para estilizar a página e criar a alternância de tema. <br>
 JavaScript: Para adicionar interatividade e alternar entre os temas.
 
+## Contato
+[linkedin](https://www.linkedin.com/in/daniel-alves-9872392a7/)
