@@ -27,7 +27,13 @@ btnTroca.addEventListener('click', ()=>{
     }
 })
 
+
+let cadastro = [];
+
+
 btnEnvioDoc.addEventListener('click', ()=>{
+
+
     efetitoTrocaBtn.innerHTML = '';
     efetitoTrocaBtn.classList.add('circulo');
 
@@ -38,3 +44,8 @@ btnEnvioDoc.addEventListener('click', ()=>{
         efetitoTrocaBtn.classList.add('enviado');
     }, 3000);
 })
+
+
+
+
+

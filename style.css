@@ -18,11 +18,22 @@ main{
     gap: 50px;
 }
 
-.box-imagem img{
+.imagemPrincipal{
     border-radius: 15px;
     box-shadow: 0px 8px 20px #1b1b1b;
+    animation: moveImage linear infinite 3s;
 }
 
+@keyframes moveImage {
+    0%{
+        transform: translateY(0px);
+    }50%{
+        transform: translatey(40px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
 
 .formulario{
     display: flex;
