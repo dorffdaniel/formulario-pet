@@ -8,7 +8,7 @@ main{
     display: flex;
     height: 100vh;
     justify-content: center;
-    background: #e0aa62;
+    background: #b9b4ae;
     transition: all ease-in-out 0.5s;
 }
 
