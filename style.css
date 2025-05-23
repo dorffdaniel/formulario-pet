@@ -40,16 +40,16 @@ main{
     justify-content: center;
     flex-direction: column;
     width: 45em;
-    height: 53em;
+    height: auto;
     gap: 10px;
     background: #fff;
-    padding: 5px 0 5px 15px;
+    padding: 1em;
     border-radius: 15px;
     transition: all ease-in-out 0.5s;
 }
 
 .formulario h1{
-    font-size: 32px;
+    font-size: 1.3em;
 }
 
 .botao{
@@ -59,8 +59,8 @@ main{
 
 .botao button{
     border: none;
-    width: 10rem;
-    height: 2rem;
+    width: 6em;
+    height: 1.7em;
     border-radius: 1.5rem;
     font-size: 1.2rem;
     cursor: pointer;
@@ -132,7 +132,6 @@ main{
 .termosEcondicao{
     display: flex;
     align-items: center;
-    font-size: 25px;
     font-weight: 900;
 }
 
@@ -142,52 +141,6 @@ main{
     margin-left: 15px;
 }
 
-.btn{
-    margin-top: 10px;
-    width: 150px;
-    height: 40px;
-    background-color: #e28205;
-    border: 3px solid #613905;
-    font-size: 25px;
-    padding: 0.6em;
-    cursor: pointer;
-    transition: all ease 0.2s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.btn:hover{
-    background-color: #613905;
-    color: #fff;
-}
-
-@keyframes rodar {
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
-}
-
-
-.circulo{
-    border: 2px solid #fff;
-    border-bottom-color: transparent;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    animation: rodar 1s linear infinite;
-}
-
-.enviado{
-    background: #e0f8e0;
-    background-image: url(imagem/check.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
 
 .dark{
     background: #242323;
