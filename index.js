@@ -72,9 +72,8 @@ btnEnvioDoc.on('click', () => {
 
 
 
-
-    mostrarModal()
-
+    mostrarModal();
+    
 
 })
 
