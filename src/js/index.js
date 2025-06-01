@@ -30,7 +30,29 @@ btnTroca.addEventListener('click', () => {
 })
 
 
-let cadastro = [];
+/* let cadastro = []; */
+
+
+
+let link = window.location.pathname;
+
+
+if (link == ' COLOCAR O LINK CORRETO  ') {
+    if (localStorage.getItem('chave') != null) {
+
+        let dados = pegarCliente()
+        let txt = getSelect(dados, 1)
+
+        console.log(dados)
+
+        //onde vou alimentar o nome do cliente por q a flag é 1 e pega o nome 
+        $('#recebCliente').html(txt).select2();
+
+    }
+}
+
+
+
 
 
 btnEnvioDoc.on('click', () => {
@@ -76,16 +98,15 @@ btnEnvioDoc.on('click', () => {
         cadastroPet.push(new Pet(temporarioEspec, temporCadastro, temporGenero, tempValidacao, cor, nomePet, nomeTutor, email, cep, nume))
 
 
-
         mostrarModal();
+        $('#resultCad').html(getDados(cadastroPet, 1))
     } else {
         alerta(`preencha os campos`, "Erro", "error");
     }
 
-
-
 })
 
+ $('#resultCad').html(getDados(cadastroPet, 1))
 
 function mostrarModal() {
     $('#modalPet').modal('show');
@@ -127,6 +148,22 @@ function mostrarModal() {
 
 
 
+
+
+
+
+
+function getDados(arr, flag) {
+    let msg = `<option value= '-1'> campo vazio </option>`
+
+    arr.forEach((element, index) => {
+        if (flag == 1) {
+            msg += `<option value= '${index}'> ${element.nome}</option>`
+        }
+    })
+
+    return msg;
+}
 
 
 
