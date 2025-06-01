@@ -1,8 +1,9 @@
 class Pet {
-    constructor(tipo, cadast, genero, cor, nome, nomeTutor, email, cep, num) {
+    constructor(tipo, cadast, genero, valid, cor, nome, nomeTutor, email, cep, num) {
         this._tipo = tipo;
         this._cadast = cadast;
         this._genero = genero;
+        this._valid = valid;
         this._cor = cor;
         this._nome = nome;
         this._nomeTutor = nomeTutor;
@@ -33,6 +34,15 @@ class Pet {
 
     set genero(genero) {
         this._genero = genero;
+    }
+
+
+    get valid() {
+        return this._valid;
+    }
+
+    set valid(valid) {
+        this._valid = valid;
     }
 
     get cor() {

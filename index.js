@@ -38,6 +38,7 @@ btnEnvioDoc.on('click', () => {
     let temporarioEspec = [];
     let temporCadastro = [];
     let temporGenero = [];
+    let tempValidacao = [];
 
     for (let i = 1; i <= 5; i++) {
         if ($('#especie' + i).is(':checked')) {
@@ -58,29 +59,37 @@ btnEnvioDoc.on('click', () => {
     }
 
 
-    cadastroPet.push(new Pet(
-        temporarioEspec,
-        temporCadastro,
-        temporGenero,
-        $('#cor').val(),
-        $('#nomePet').val(),
-        $('#nomeTutor').val(),
-        $('#email').val(),
-        $('#cep').val(),
-        $('#num').val()
-    ))
+    if ($('#check').is(':checked')) {
+        tempValidacao.push($('#check').val())
+    }
+
+
+    let cor = $('#cor').val().trim();
+    let nomePet = $('#nomePet').val().trim();
+    let nomeTutor = $('#nomeTutor').val().trim();
+    let email = $('#email').val().trim();
+    let cep = $('#cep').val().trim();
+    let nume = $('#num').val().trim();
+
+    if (cor !== '' && nomePet !== '' && nomeTutor !== '' && email !== '' && cep !== '' && nume !== '' && tempValidacao.length > 0) {
+
+        cadastroPet.push(new Pet(temporarioEspec, temporCadastro, temporGenero, tempValidacao, cor, nomePet, nomeTutor, email, cep, nume))
 
 
 
-    mostrarModal();
-    
+        mostrarModal();
+    } else {
+        alerta(`preencha os campos`, "Erro", "error");
+    }
+
+
 
 })
 
 
 function mostrarModal() {
     $('#modalPet').modal('show');
-    
+
     let msg = '';
 
     cadastroPet.forEach(element => {
@@ -107,3 +116,42 @@ function mostrarModal() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function alerta(msg, titulo, icon) {
+    Swal.fire({
+        position: "center",
+        icon: icon,
+        title: titulo,
+        text: msg,
+        showConfirmButton: true,    // é aqui o botao
+        confirmButtonText: 'OK',
+        timer: 1500,
+        showClass: {
+            popup: `
+              animate__animated
+              animate__fadeInDown
+              animate__faster
+            `
+        },
+        hideClass: {
+            popup: `
+              animate__animated
+              animate__fadeOutUp
+              animate__faster
+            `
+        }
+    });
+}
