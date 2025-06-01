@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Novo Formulario Pet</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap.css">
-    <script src="jequery.js"></script>
-    <script src="bootstrap.js"></script>
-    <script src="Pet.js"></script>
-    <script src="sweet.js"></script>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/bootstrap.css">
+    <script src="src/js/jequery.js"></script>
+    <script src="src/js/bootstrap.js"></script>
+    <script src="src/js/Pet.js"></script>
+    <script src="src/js/sweet.js"></script>
 </head>
 
 <body>
@@ -21,15 +21,15 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Casa</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Casa</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Sobre</a>
                         </li>
-                         <li class="nav-item">
-                            <a class="nav-link" href="#">Cadastro</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cadastro.html">Cadastro</a>
                         </li>
-                       
+
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
@@ -39,99 +39,54 @@
             </div>
         </nav>
     </header>
+    <main id="mainIndex">
 
+        <div class="containerCasa">
 
-    <main class="main">
-        <div class="container">
-            <div class="box-imagem">
-                <img src="imagem/cachorro1.png" alt="imagem de uma mulher e um Cachorro" class="imagemPrincipal">
-            </div>
-            <form class="formulario">
-                <h1>Tipos ou especies</h1>
-                <div class="botao">
-                    <button class="btnTroca">Versao Dark</button>
+            <h2>Os produtos favoritos do seu pet estão aqui.</h2>
+
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
-                <div class="selecionar-animais">
-                    <!-- <form action="" id="formRadios" class="selecionar-animais"> -->
-                    <input type="radio" name="animais" id="especie1" value="cachorro">
-                    <label for="dog">Cahorro</label>
-
-                    <input type="radio" name="animais" id="especie2" value="gato">
-                    <label for="cat">Gato</label>
-
-                    <input type="radio" name="animais" id="especie3" value="peixe">
-                    <label for="fish">Peixe</label>
-                    <input type="radio" name="animais" id="especie4" value="aves">
-                    <label for="birds">Aves</label>
-                    <input type="radio" name="animais" id="especie5" value="outros">
-                    <label for="others">Outros</label>
-                    <!-- </form> -->
-                </div>
-                <div class="info">
-                    <h2>Castrado?</h2>
-                    <input type="radio" name="cas" id="cad1" value="sim">
-                    <label for="sim">sim</label>
-
-                    <input type="radio" name="cas" id="cad2" value="nao">
-                    <label for="nao">nao</label>
-
-                    <h2>Genero</h2>
-                    <input type="radio" name="genero" id="genero1" value="femea">
-                    <label for="fem">Femea</label>
-
-                    <input type="radio" name="genero" id="genero2" value="macho">
-                    <label for="macho">Macho</label>
-                </div>
-
-                <div class="info-animal">
-                    <label for="cor">Cor</label>
-                    <input type="text" name="" id="cor" placeholder="cor *">
-
-                    <label for="NomePet">Nome do Pet</label>
-                    <input type="text" name="" id="nomePet" placeholder="nome do Pet *" required>
-                </div>
-
-                <div class="info-pessoa">
-                    <label for="NomeTutor">Nome do Tutor</label>
-                    <input type="text" name="" id="nomeTutor" placeholder="nome do Tutor*" required>
-
-                    <label for="email">E-mail</label>
-                    <input type="text" name="" id="email" placeholder="E-mail*" required>
-
-                    <label for="cep">CEP</label>
-                    <input type="number" id="cep" min="0" required>
-
-                    <label for="num">Numero</label>
-                    <input type="number" id="num" min="0" required>
-                </div>
-                <div class="termosEcondicao">
-                    <label for="check">Termo de Consentimento dos dados aqui inseridos:</label>
-                    <input type="checkbox" id="check" required>
-                </div>
-
-                <button type="button" class="btn btn-primary" id="btnEnviar">Enviar</button>
-            </form>
-        </div>
-
-        <div class="modal" tabindex="-1" id="modalPet">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Detalhes do Cadastro</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagem/01 (2).jpg" class="d-block w-100" alt="...">
                     </div>
-                    <div class="modal-body" id="modalRes">
-
-
+                    <div class="carousel-item">
+                        <img src="imagem/02.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagem/03.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-
 
     </main>
+    <footer class="rodape">
 
-    <script src="index.js"></script>
+        <p>PetHosp – Cuidando com amor de quem enche sua vida de alegria.</p>
+    </footer>
+
+
+
+    <script src="src/js/index.js"></script>
 </body>
 
 </html>

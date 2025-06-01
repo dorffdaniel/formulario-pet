@@ -4,9 +4,46 @@
     box-sizing: border-box;
     outline: none;
 }
-main{
+
+#mainIndex{
+    background: #d1cdcd;
+    height: 85vh;
+    
+}
+
+.containerCasa{
     display: flex;
-    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+
+#carouselExampleIndicators{
+    height: 35em;
+    width: 80%;
+    margin-bottom: .5em;
+}
+
+#carouselExampleIndicators img{
+    height: 35em;
+    width: 80%;
+}
+
+.rodape{
+    background: #000;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    height: 9.1vh;
+}
+
+
+
+.main2{
+    display: flex;
+    height: 85vh;
     justify-content: center;
     background: #b9b4ae;
     transition: all ease-in-out 0.5s;
@@ -15,7 +52,7 @@ main{
 .container{
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 5em;
 }
 
 .imagemPrincipal{
@@ -39,11 +76,10 @@ main{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 45em;
+    width: 60em;
     height: auto;
-    gap: 10px;
     background: #fff;
-    padding: 1em;
+    padding: 0.5em 2em;
     border-radius: 15px;
     transition: all ease-in-out 0.5s;
 }
@@ -79,12 +115,17 @@ main{
     cursor: pointer;
 }
 
+.selecionar-animais label{
+    font-size: 17px;
+}
+
 .info h2{
     margin: 10px 0;
+    font-size: 18px;
 }
 
 .info label{
-    font-size: 25px;
+    font-size: 16px;
     padding: 8px;
 }
 
@@ -102,7 +143,7 @@ main{
 }
 
 .info-animal label{
-    font-size: 25px;
+    font-size: 18px;
     margin-top: 10px;
 }
 
@@ -119,7 +160,7 @@ main{
 
 
 .info-pessoa label{
-    font-size: 25px;
+    font-size: 17px;
     margin-top: 10px;
 }
 
@@ -141,6 +182,11 @@ main{
     margin-left: 15px;
 }
 
+
+.termosEcondicao label{
+    font-size: 14px;
+    margin: 0.8em 0;
+}
 
 .dark{
     background: #242323;
